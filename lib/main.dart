@@ -18,6 +18,7 @@ void main() {
     ),
   );
 }
+
 class BookstoreApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -31,11 +32,9 @@ class BookstoreApp extends StatelessWidget {
         '/login': (context) => LoginScreen(),
         '/register': (context) => RegistrationScreen(),
         '/home': (context) => BookstoreHome(),
-        '/shopping_cart': (context) => ShoppingCartScreen(), // Добавьте этот маршрут
-        '/favorite': (context) => FavoritesScreen(), // И этот маршрут
+        '/shopping_cart': (context) => ShoppingCartScreen(),
+        '/favorite': (context) => FavoritesScreen(),
       },
     );
   }
 }
-
-

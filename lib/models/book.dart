@@ -49,4 +49,212 @@ List<Book> bookList = [
       videoUrl: 'https://www.youtube.com/watch?v=dQSybR13JSA'
 
     ),
+    Book(
+    id: '2',
+      title: 'Book 1',
+      author: 'Author 1',
+      description: 'Description of Book 1 Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1',
+      price: 19.99,
+      year: 2000,
+      edition: '1st Edition',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU',
+      images: ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU'],
+      videoUrl: 'https://www.youtube.com/watch?v=dQSybR13JSA'
+
+    ),
+    Book(
+    id: '2',
+      title: 'Book 1',
+      author: 'Author 1',
+      description: 'Description of Book 1 Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1',
+      price: 19.99,
+      year: 2000,
+      edition: '1st Edition',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU',
+      images: ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU'],
+      videoUrl: 'https://www.youtube.com/watch?v=dQSybR13JSA'
+
+    ),
+    Book(
+    id: '2',
+      title: 'Book 1',
+      author: 'Author 1',
+      description: 'Description of Book 1 Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1',
+      price: 19.99,
+      year: 2000,
+      edition: '1st Edition',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU',
+      images: ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU'],
+      videoUrl: 'https://www.youtube.com/watch?v=dQSybR13JSA'
+
+    ),
+    Book(
+    id: '2',
+      title: 'Book 1',
+      author: 'Author 1',
+      description: 'Description of Book 1 Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1',
+      price: 19.99,
+      year: 2000,
+      edition: '1st Edition',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU',
+      images: ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU'],
+      videoUrl: 'https://www.youtube.com/watch?v=dQSybR13JSA'
+
+    ),
+    Book(
+    id: '2',
+      title: 'Book 1',
+      author: 'Author 1',
+      description: 'Description of Book 1 Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1',
+      price: 19.99,
+      year: 2000,
+      edition: '1st Edition',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU',
+      images: ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU'],
+      videoUrl: 'https://www.youtube.com/watch?v=dQSybR13JSA'
+
+    ),
+    Book(
+    id: '2',
+      title: 'Book 1',
+      author: 'Author 1',
+      description: 'Description of Book 1 Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1',
+      price: 19.99,
+      year: 2000,
+      edition: '1st Edition',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU',
+      images: ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU'],
+      videoUrl: 'https://www.youtube.com/watch?v=dQSybR13JSA'
+
+    ),
+    Book(
+    id: '2',
+      title: 'Book 1',
+      author: 'Author 1',
+      description: 'Description of Book 1 Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1',
+      price: 19.99,
+      year: 2000,
+      edition: '1st Edition',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU',
+      images: ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU'],
+      videoUrl: 'https://www.youtube.com/watch?v=dQSybR13JSA'
+
+    ),
+    Book(
+    id: '2',
+      title: 'Book 1',
+      author: 'Author 1',
+      description: 'Description of Book 1 Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1',
+      price: 19.99,
+      year: 2000,
+      edition: '1st Edition',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU',
+      images: ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU'],
+      videoUrl: 'https://www.youtube.com/watch?v=dQSybR13JSA'
+
+    ),
+    Book(
+    id: '2',
+      title: 'Book 1',
+      author: 'Author 1',
+      description: 'Description of Book 1 Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1',
+      price: 19.99,
+      year: 2000,
+      edition: '1st Edition',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU',
+      images: ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU'],
+      videoUrl: 'https://www.youtube.com/watch?v=dQSybR13JSA'
+
+    ),
+    Book(
+    id: '2',
+      title: 'Book 1',
+      author: 'Author 1',
+      description: 'Description of Book 1 Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1',
+      price: 19.99,
+      year: 2000,
+      edition: '1st Edition',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU',
+      images: ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU'],
+      videoUrl: 'https://www.youtube.com/watch?v=dQSybR13JSA'
+
+    ),
+    Book(
+    id: '2',
+      title: 'Book 1',
+      author: 'Author 1',
+      description: 'Description of Book 1 Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1',
+      price: 19.99,
+      year: 2000,
+      edition: '1st Edition',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU',
+      images: ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU'],
+      videoUrl: 'https://www.youtube.com/watch?v=dQSybR13JSA'
+
+    ),
+    Book(
+    id: '2',
+      title: 'Book 1',
+      author: 'Author 1',
+      description: 'Description of Book 1 Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1',
+      price: 19.99,
+      year: 2000,
+      edition: '1st Edition',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU',
+      images: ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU'],
+      videoUrl: 'https://www.youtube.com/watch?v=dQSybR13JSA'
+
+    ),
+    Book(
+    id: '2',
+      title: 'Book 1',
+      author: 'Author 1',
+      description: 'Description of Book 1 Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1',
+      price: 19.99,
+      year: 2000,
+      edition: '1st Edition',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU',
+      images: ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU'],
+      videoUrl: 'https://www.youtube.com/watch?v=dQSybR13JSA'
+
+    ),
+    Book(
+    id: '2',
+      title: 'Book 1',
+      author: 'Author 1',
+      description: 'Description of Book 1 Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1',
+      price: 19.99,
+      year: 2000,
+      edition: '1st Edition',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU',
+      images: ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU'],
+      videoUrl: 'https://www.youtube.com/watch?v=dQSybR13JSA'
+
+    ),
+    Book(
+    id: '2',
+      title: 'Book 1',
+      author: 'Author 1',
+      description: 'Description of Book 1 Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1',
+      price: 19.99,
+      year: 2000,
+      edition: '1st Edition',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU',
+      images: ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU'],
+      videoUrl: 'https://www.youtube.com/watch?v=dQSybR13JSA'
+
+    ),
+     Book(
+    id: '2',
+      title: 'Book 1',
+      author: 'Author 1',
+      description: 'Description of Book 1 Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1Description of Book 1',
+      price: 19.99,
+      year: 2000,
+      edition: '1st Edition',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU',
+      images: ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_10tw4D4RgEDlgovp4Q64YKI8V2soiuuusF-pgoyTmkzVgojYgGMhwgt1kmY-_pR16U&usqp=CAU'],
+      videoUrl: 'https://www.youtube.com/watch?v=dQSybR13JSA'
+
+    ),
 ];

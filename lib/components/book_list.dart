@@ -3,7 +3,6 @@ import '../models/book.dart';
 import 'package:provider/provider.dart';
 import 'package:bookshopv2/manager/book_manager.dart';
 
-
 class BookList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -44,6 +43,26 @@ class BookCard extends StatefulWidget {
 class _BookCardState extends State<BookCard> {
   bool isInCart = false;
   bool isFavorite = false;
+  @override
+  void initState() {
+    super.initState();
+    final favorites = Provider.of<FavoritesModel>(context, listen: false);
+    isFavorite = favorites.isFavorite(widget.book);
+  }
+
+  void _toggleFavorite() {
+    setState(() {
+      isFavorite = !isFavorite;
+    });
+    final favorites = Provider.of<FavoritesModel>(context, listen: false);
+    if (isFavorite) {
+      favorites.addToFavorites(widget.book);
+      _showFavoriteAddedNotification(context, widget.book);
+    } else {
+      favorites.removeFromFavorites(widget.book);
+      _showFavoriteRemovedNotification(context, widget.book);
+    }
+  }
 
   void _addToCart() {
     setState(() {
@@ -76,13 +95,11 @@ class _BookCardState extends State<BookCard> {
   @override
   Widget build(BuildContext context) {
     final cart = Provider.of<CartModel>(context, listen: false);
-    final favorites = Provider.of<FavoritesModel>(context, listen: false);
     return Card(
-      margin: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
-      child: InkWell(
-        onTap: widget.onTap,
-        child: Column(
-          children: [
+        margin: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
+        child: InkWell(
+          onTap: widget.onTap,
+          child: Column(children: [
             Expanded(
               child: AspectRatio(
                 aspectRatio: 0.7,
@@ -110,37 +127,35 @@ class _BookCardState extends State<BookCard> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                 Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                IconButton(
-                  onPressed: () {
-                    cart.addToCart(widget.book);
-                    _showAddedToCartNotification(context, widget.book);
-                  },
-                  icon: Icon(Icons.shopping_cart),
-                  tooltip: 'Добавить в корзину',
-                ),
-                IconButton(
-                  onPressed: () {
-                    if (favorites.isFavorite(widget.book)) {
-                      favorites.removeFromFavorites(widget.book);
-                    } else {
-                      favorites.addToFavorites(widget.book);
-                    }
-                  },
-                  icon: Icon(
-                    favorites.isFavorite(widget.book) ? Icons.favorite : Icons.favorite_border,
-                  ),
-                  tooltip: favorites.isFavorite(widget.book) ? 'Удалить из избранного' : 'Добавить в избранное',
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    IconButton(
+                      onPressed: () {
+                        cart.addToCart(widget.book);
+                        _showAddedToCartNotification(context, widget.book);
+                      },
+                      icon: Icon(Icons.shopping_cart),
+                      tooltip: 'Добавить в корзину',
+                    ),
+                    IconButton(
+                      onPressed: _toggleFavorite,
+                      icon: Icon(
+                        isFavorite ? Icons.favorite : Icons.favorite_border,
+                        color: isFavorite
+                            ? Colors.red
+                            : null, 
+                      ),
+                      tooltip: isFavorite
+                          ? 'Удалить из избранного'
+                          : 'Добавить в избранное',
+                    ),
+                  ],
                 ),
               ],
             ),
-            
-          ],
-        ),
-  ]),
-    ));
+          ]),
+        ));
   }
 }
 
@@ -192,7 +207,6 @@ class BookDetailsPage extends StatelessWidget {
               ),
             ],
           ),
-          // Добавляем кнопки под описанием в виде иконок и кнопку "Buy Now"
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -215,13 +229,16 @@ class BookDetailsPage extends StatelessWidget {
                   }
                 },
                 icon: Icon(
-                  favorites.isFavorite(book) ? Icons.favorite : Icons.favorite_border,
+                  favorites.isFavorite(book)
+                      ? Icons.favorite
+                      : Icons.favorite_border,
                 ),
-                tooltip: favorites.isFavorite(book) ? 'Удалить из избранного' : 'Добавить в избранное',
+                tooltip: favorites.isFavorite(book)
+                    ? 'Удалить из избранного'
+                    : 'Добавить в избранное',
               ),
               IconButton(
                 onPressed: () {
-                  // Логика для добавления в избранное
                   _showFavoriteAddedNotification(context, book);
                 },
                 icon: Icon(Icons.monetization_on),
