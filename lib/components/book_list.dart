@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../models/book.dart';
 import 'package:provider/provider.dart';
-import 'package:bookshopv2/manager/book_manager.dart';
+import 'package:bookshopv2/manager/CartAndFavItems.dart';
 
 class BookList extends StatelessWidget {
   @override
@@ -12,7 +12,7 @@ class BookList extends StatelessWidget {
         mainAxisSpacing: 10,
         crossAxisCount: 2,
       ),
-      itemCount: bookList.length,
+      itemCount: bookList.length,   
       itemBuilder: (context, index) {
         return BookCard(
           book: bookList[index],
@@ -116,7 +116,6 @@ class _BookCardState extends State<BookCard> {
                 children: [
                   Text(
                     widget.book.title,
-                    style: Theme.of(context).textTheme.headline6,
                   ),
                   Text(widget.book.author),
                   Text('Цена: \$${widget.book.price}'),
@@ -144,7 +143,7 @@ class _BookCardState extends State<BookCard> {
                         isFavorite ? Icons.favorite : Icons.favorite_border,
                         color: isFavorite
                             ? Colors.red
-                            : null, 
+                            : null,
                       ),
                       tooltip: isFavorite
                           ? 'Удалить из избранного'
@@ -169,43 +168,86 @@ class BookDetailsPage extends StatelessWidget {
     final cart = Provider.of<CartModel>(context, listen: false);
     final favorites = Provider.of<FavoritesModel>(context, listen: false);
 
+    int currentImageIndex = 0;
+
     return Scaffold(
       appBar: AppBar(
         title: Text(book.title),
       ),
       body: ListView(
         children: [
-          Column(
+          Stack(
             children: [
-              SizedBox(
-                width: MediaQuery.of(context).size.width * 0.5,
-                child: AspectRatio(
-                  aspectRatio: 0.7,
-                  child: Image.network(
-                    book.image,
-                    fit: BoxFit.cover,
+              Center(
+                child: SizedBox(
+                  width: MediaQuery.of(context).size.width * 0.6,
+                  height: MediaQuery.of(context).size.width * 0.6 * 0.7,
+                  child: AspectRatio(
+                    aspectRatio: 0.7,
+                    child: PageView.builder(
+                      itemCount: book.images.length,
+                      onPageChanged: (index) {
+                        currentImageIndex = index;
+                      },
+                      itemBuilder: (context, index) {
+                        return Image.network(
+                          book.images[index],
+                          fit: BoxFit.contain,  
+                          width: double.infinity,
+                        );
+                      },
+                    ),
                   ),
                 ),
               ),
-              const SizedBox(height: 16),
-              Text('Автор: ${book.author}'),
-              Text('Цена: \$${book.price}'),
-              Text('Год: ${book.year}'),
+              Positioned(
+                bottom: 10,
+                left: 0,
+                right: 0,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: List.generate(book.images.length, (index) {
+                    return Container(
+                      width: 8.0,
+                      height: 8.0,
+                      margin: EdgeInsets.symmetric(horizontal: 4.0),
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: currentImageIndex == index ? Colors.blue : Colors.grey,
+                      ),
+                    );
+                  }),
+                ),
+              ),
             ],
           ),
-          ListView(
-            shrinkWrap: true,
-            physics: const NeverScrollableScrollPhysics(),
-            children: [
-              Text(
-                'Описание:',
-                style: Theme.of(context).textTheme.headline6,
+          const SizedBox(height: 16),
+          Center(
+            child: Column(
+              children: [
+                Text('Автор: ${book.author}'),
+                Text('Цена: \$${book.price}'),
+                Text('Год: ${book.year}'),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 200,  
+            child: SingleChildScrollView(
+              scrollDirection: Axis.vertical,
+              child: Column(
+                children: [
+                  Text(
+                    'Описание:',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                  Text(
+                    book.description,
+                    style: TextStyle(height: 1.5),  
+                  ),
+                ],
               ),
-              Text(
-                book.description,
-                style: Theme.of(context).textTheme.bodyText1,
-              ),
-            ],
+            ),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -229,9 +271,7 @@ class BookDetailsPage extends StatelessWidget {
                   }
                 },
                 icon: Icon(
-                  favorites.isFavorite(book)
-                      ? Icons.favorite
-                      : Icons.favorite_border,
+                  favorites.isFavorite(book) ? Icons.favorite : Icons.favorite_border,
                 ),
                 tooltip: favorites.isFavorite(book)
                     ? 'Удалить из избранного'
@@ -239,7 +279,7 @@ class BookDetailsPage extends StatelessWidget {
               ),
               IconButton(
                 onPressed: () {
-                  _showFavoriteAddedNotification(context, book);
+                  _showPurchaseConfirmationDialog(context, book);
                 },
                 icon: Icon(Icons.monetization_on),
                 tooltip: 'Купить сейчас',
@@ -252,6 +292,7 @@ class BookDetailsPage extends StatelessWidget {
   }
 }
 
+
 void _showPurchaseConfirmationDialog(BuildContext context, Book book) {
   showDialog(
     context: context,
@@ -259,7 +300,7 @@ void _showPurchaseConfirmationDialog(BuildContext context, Book book) {
       return AlertDialog(
         title: Text('Подтверди покупку'),
         content: Text(
-            'Are you sure you want to purchase "${book.title}" for \$${book.price}?'),
+            'Вы уверены что хотите купить книгу "${book.title}" за \$${book.price}?'),
         actions: <Widget>[
           TextButton(
             child: Text('Отменить'),
@@ -282,10 +323,10 @@ void _showPurchaseConfirmationDialog(BuildContext context, Book book) {
 
 void _showFavoriteAddedNotification(BuildContext context, Book book) {
   final ScaffoldMessengerState scaffoldMessenger =
-      ScaffoldMessenger.of(context);
+  ScaffoldMessenger.of(context);
   scaffoldMessenger.showSnackBar(
     SnackBar(
-      content: Text('"${book.title}" has been added to your favorites.'),
+      content: Text('"${book.title}" была добавлена в избранное'),
       duration: Duration(seconds: 2),
     ),
   );
@@ -293,7 +334,7 @@ void _showFavoriteAddedNotification(BuildContext context, Book book) {
 
 void _showAddedToCartNotification(BuildContext context, Book book) {
   final ScaffoldMessengerState scaffoldMessenger =
-      ScaffoldMessenger.of(context);
+  ScaffoldMessenger.of(context);
   scaffoldMessenger.showSnackBar(
     SnackBar(
       content: Text('Книга "${book.title}" была добавлен в корзину'),
@@ -304,7 +345,7 @@ void _showAddedToCartNotification(BuildContext context, Book book) {
 
 void _showFavoriteRemovedNotification(BuildContext context, Book book) {
   final ScaffoldMessengerState scaffoldMessenger =
-      ScaffoldMessenger.of(context);
+  ScaffoldMessenger.of(context);
   scaffoldMessenger.showSnackBar(
     SnackBar(
       content: Text('"${book.title}" была удалена из избранного'),
@@ -315,7 +356,7 @@ void _showFavoriteRemovedNotification(BuildContext context, Book book) {
 
 void _showRemovedFromCartNotification(BuildContext context, Book book) {
   final ScaffoldMessengerState scaffoldMessenger =
-      ScaffoldMessenger.of(context);
+  ScaffoldMessenger.of(context);
   scaffoldMessenger.showSnackBar(
     SnackBar(
       content: Text('Книга "${book.title}" была удален из корзины'),

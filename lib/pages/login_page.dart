@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:bookshopv2/models/user.dart';
-
+import 'package:provider/provider.dart';
+import 'package:bookshopv2/pages/bookstore_home.dart';
 class LoginScreen extends StatefulWidget {
   @override
   _LoginScreenState createState() => _LoginScreenState();
@@ -15,7 +16,7 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Login'),
+        title: Text('Вход'),
       ),
       body: Padding(
         padding: EdgeInsets.all(16.0),
@@ -24,33 +25,34 @@ class _LoginScreenState extends State<LoginScreen> {
           children: <Widget>[
             TextField(
               controller: _usernameController,
-              decoration: InputDecoration(labelText: 'Username'),
+              decoration: InputDecoration(labelText: 'Логин'),
             ),
             TextField(
               controller: _passwordController,
-              decoration: InputDecoration(labelText: 'Password'),
+              decoration: InputDecoration(labelText: 'Пароль'),
               obscureText: true,
             ),
             SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () async {
-                final user = await _userRepository.authenticate(
-                  _usernameController.text,
-                  _passwordController.text,
-                );
-                if (user != null) {
-                  Navigator.of(context).pushReplacementNamed('/home');
+      onPressed: () async {
+        final user = await _userRepository.authenticate(
+          _usernameController.text,
+          _passwordController.text,
+        );
+        if (user != null) {
+          Provider.of<UserProvider>(context, listen: false).setUser(user);
+          Navigator.of(context).pushReplacementNamed('/home');
                 } else {
                   ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(content: Text('Invalid username or password')),
+                    SnackBar(content: Text('Неверный логин или пароль')),
                   );
                 }
               },
-              child: Text('Login'),
+              child: Text('Войти'),
             ),
             SizedBox(height: 10),
             TextButton(
-              child: Text('Register'),
+              child: Text('Регистрация'),
               onPressed: () {
                 Navigator.of(context).pushNamed('/register');
               },

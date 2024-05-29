@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:bookshopv2/manager/book_manager.dart';
+import 'package:bookshopv2/manager/CartAndFavItems.dart';
 
 class FavoritesScreen extends StatelessWidget {
   @override
